@@ -1,0 +1,15 @@
+Example (genuine):
+Log entry:
+Receiver vehicle 10 received a message from vehicle 5 at time 12.100 s.
+Sender (hv) position: (2474.0, 3995.5), speed: 13.5 m/s, heading: 2.0 deg.
+Receiver (rv) position: (2473.5, 3994.9), speed: 12.8 m/s, heading: 1.8 deg.
+Target id: -1, EEBL warning: 0, IMA warning: 0.
+Answer: genuine
+
+Example (attacker):
+Log entry:
+Receiver vehicle 10 received a message from vehicle 5 at time 12.200 s.
+Sender (hv) position: (99999.0, 99999.0), speed: 13.5 m/s, heading: 2.0 deg.
+Receiver (rv) position: (2473.5, 3994.9), speed: 12.8 m/s, heading: 1.8 deg.
+Target id: -1, EEBL warning: 0, IMA warning: 0.
+Answer: attacker
