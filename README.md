@@ -7,7 +7,7 @@ This repository contains code artifacts and the report for a term project that e
 ## What’s included
 - CSV → JSONL preprocessing (`src/data_preprocessing/`)
 - Prompt templates + prompting runner (`src/prompting/`)
-- Metrics + (optional) time-slice analysis (`src/evaluation/`)
+- Metrics (`src/evaluation/`)
 - Example JSONL files (`examples/`)
 - Config examples (`configs/`)
 - Project report (`report/`)
@@ -93,10 +93,7 @@ python src/prompting/run_prompting.py --mode few_shot --provider groq --model ll
 python src/evaluation/compute_metrics.py --predictions_jsonl results/preds_zero.jsonl --out_json results/metrics_zero.json
 ```
 
-### E) Optional: time-sliced metrics (requires a `msg_rcv_time` field)
-```bash
-python src/evaluation/time_slice_metrics.py --predictions_jsonl results/preds_zero.jsonl --time_field msg_rcv_time --bin_seconds 5 --out_csv results/time_slices.csv
-```
+
 
 ---
 
@@ -131,5 +128,4 @@ misbehaviorx-llm-project/
 ```
 
 ## Notes
-- **Never** commit API keys. Use environment variables.
 - Keep naming consistent (attack type strings) between preprocessing, prompts, and evaluation.
