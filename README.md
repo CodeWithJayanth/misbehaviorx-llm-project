@@ -1,6 +1,6 @@
 # MisbehaviorX LLM-based Misbehavior Detection (Term Project)
 
-This repository contains code artifacts and the report for a term project that explores **LLM-based misbehavior detection** on the **MisbehaviorX** V2X dataset. The project converts V2X log rows (CSV) into prompt-ready text/JSONL, runs **zero-shot / few-shot** prompting on LLMs (e.g., Groq-hosted models), and evaluates predictions as **attacker vs genuine**.
+This repository contains code artifacts and the report for a term project that explores **LLM-based misbehavior detection** on the **MisbehaviorX** V2X dataset. The project converts V2X log rows (CSV) into prompt-ready text/JSONL, runs **zero-shot / few-shot** prompting on LLMs, and evaluates predictions as **attacker vs genuine**.
 
 **Report:** `report/misbehaviorx_report.pdf`
 
